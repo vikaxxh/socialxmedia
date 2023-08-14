@@ -1,0 +1,45 @@
+.home {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 88vh;
+}
+
+.homeleft {
+  background-image: linear-gradient(to right, #fff5bc, #cec1ff);
+
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+.homeright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: auto;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.homeUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.507);
+  transition: all 0.5s;
+}
+.homeUser > img {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.8rem;
+  border-radius: 100%;
+  border: 3px solid rgb(255, 201, 201);
+}
+
+.homeUser:hover {
+  transform: translateY(-10px);
+}
